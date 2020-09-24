@@ -7,7 +7,6 @@ import com.google.gson.* ;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.Map;
 
 public class QuotesFinder {
 
@@ -24,9 +23,6 @@ public class QuotesFinder {
         String finalQuote = String.format("\"%s\" was said by the author %s.", toRead[randomQuoteNumber].text, toRead[randomQuoteNumber].author);
         System.out.println(finalQuote);
         return finalQuote;
-        //        System.out.println(newQuotes);
-//        System.out.println(newQuotes[0].author);
-//        return newQuotes;
     }
 
     public int random(int sizeOfRandom){
