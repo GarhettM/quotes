@@ -15,8 +15,7 @@ public class Quote {
     this.text = text;
   }
 
-public String toString() {
-  return String.format("Here's this thing %s", author);
+  public String toString() {
+    return String.format("Here's this quote, ' %s '", text);
   }
 }
-

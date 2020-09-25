@@ -6,6 +6,7 @@ package quotes;
 import org.junit.Test;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.lang.reflect.Array;
 
 import static org.junit.Assert.*;
@@ -24,5 +25,10 @@ public class QuoteTest {
     int thingToTest = heresThing.random(quoteArray.length);
     int i = 1;
     assertNotNull(String.valueOf(int.class), thingToTest); // how to test that a primitive is it's class/type?
+  }
+
+  @Test public void functionalityTestThree() throws IOException {
+    QuotesFinder hereThing = new QuotesFinder();
+    System.out.println(hereThing.addToJson());
   }
 }
